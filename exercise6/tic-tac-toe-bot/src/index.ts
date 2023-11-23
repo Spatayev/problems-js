@@ -5,6 +5,7 @@ import SlytherinUser from "./model/SlytherinUser.ts";
 import GryffindorUser from "./model/GryffindorUser.ts";
 import RavenclawUser from "./model/RavenclawUser.ts";
 import HufflepuffUser from "./model/HufflepuffUser.ts";
+import MyTicTacToeBot from "./my_bot/MyBot.ts";
 
 window.addEventListener("unload", unloadHandler, {once: true});
 window.addEventListener("load", loadHandler, {once: true});
@@ -13,6 +14,8 @@ function unloadHandler() {
     // NOTE: no need for removeEventListener;
     controller.abort();
 }
+
+
 
 async function loadHandler() {
     const app = getApp();
@@ -44,6 +47,7 @@ function getPlayers() {
     const slytherinUser = new SlytherinUser();
     const ravenclawUser = new RavenclawUser();
     const hufflepuffUser = new HufflepuffUser();
+    const myBot = new MyTicTacToeBot("ХаффлеПуфф", "/public/hufflepuff.webp")
 
-    return [gryffindorUser, slytherinUser, ravenclawUser, hufflepuffUser];
+    return [gryffindorUser, myBot];
 }
