@@ -65,10 +65,6 @@ class MyBotV2 extends Bot {
         return corners[Math.floor(Math.random() * corners.length)];
       }
     }
-
-    // Play strategically to force a draw or win
-    // Implement more advanced logic here if needed
-
     return undefined;
   }
 
