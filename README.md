@@ -6,8 +6,8 @@ This is problems repo.
 
 You will need:
 
-* [git](https://git-scm.com/)
-* [NodeJS](https://nodejs.org) (npm come with node js)
+- [git](https://git-scm.com/)
+- [NodeJS](https://nodejs.org) (npm come with node js)
 
 Using [jest](https://jestjs.io/) as a testing lib.
 
@@ -50,11 +50,11 @@ git pull upstream main
 In order to run specific exercise (for example `exercise2`):
 
 ```shell
-npm test ./exercise2/..
+npm test ./exercise2/
 ```
 
 Or specific problem (for example `exercise3/problem5`):
 
 ```shell
-npm test ./exercise3/problem5/..
+npm test ./exercise3/problem5/
 ```
